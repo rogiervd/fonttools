@@ -6,8 +6,9 @@
 
 # Make the compiler use QT
 #QTDIR=/usr/share/qt3
+QT_LIBRARY=qt
 CPPFLAGS=-I${QTDIR}/include -D_STANDALONE_
-LDFLAGS=-L$(QTDIR)/lib -lqt
+LDFLAGS=-L$(QTDIR)/lib -l${QT_LIBRARY}
 
 truetypeviewerobjects = cvtviewerdialog.o moc_glyphviewerdialog.o \
 		cvtviewerdialogbase.o moc_glyphviewerdialogbase.o \
