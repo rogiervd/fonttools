@@ -35,6 +35,7 @@
 */
 
 #include <cassert>
+#include <cstdlib>
 #include <qglobal.h>
 #include <qimage.h>
 #include "fontcache.h"
