@@ -35,6 +35,7 @@
 */
 
 #include <cassert>
+#include <cstdlib>
 #include <qglobal.h>
 #include <qimage.h>
 #include "fontcache.h"
@@ -48,6 +49,8 @@ void MessageInstructionProcessor::addWarning (InstructionExceptionPtr newWarning
 
 
 /*** RasterCache ***/
+
+void rasterCallback(int y, int count, FT_Span*  spans, void* user);
 
 RasterCache::RasterCache (const InstructionProcessor::Points &points)
 {
