@@ -50,6 +50,8 @@ void MessageInstructionProcessor::addWarning (InstructionExceptionPtr newWarning
 
 /*** RasterCache ***/
 
+void rasterCallback(int y, int count, FT_Span*  spans, void* user);
+
 RasterCache::RasterCache (const InstructionProcessor::Points &points)
 {
 	FT_Raster raster;
